@@ -1,0 +1,12 @@
+.navigation {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  li{
+    float: left;
+    padding: 10px 20px;
+  }
+  li:hover{
+    background: red;
+  }
+}
