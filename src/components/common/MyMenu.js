@@ -51,9 +51,8 @@ class MyMenu extends Component {
       <ul className="navigation">
         {
           navigaion.map((item, index) => (
-            <li key={index}>
-              <a onClick={() => this.flip(item.name)}>{item.label}</a>
-              {/* <Link to={item.name}>{item.label}</Link> */}
+            <li key={index} onClick={() => this.flip(item.name)}>
+              {item.label}{/* <Link to={item.name}>{item.label}</Link> */}
             </li>
           ))
         }
