@@ -16,10 +16,12 @@ const navigaion = [
     }, {
       name: 'project',
       label: '项目'
-    }, {
-      name: 'hobby',
-      label: '爱好'
-    }, {
+    }, 
+    // {
+    //   name: 'hobby',
+    //   label: '爱好'
+    // }, 
+    {
       name: 'blog',
       label: '博客'
     }
@@ -30,11 +32,9 @@ class MyMenu extends Component {
     super(props);
     this.flip = this.flip.bind(this);
   }
-
   static contextTypes = {
     router: PropTypes.object.isRequired
   };
-
   flip = (status) => {
     // if (this.state.active === status) return !1
     // this.setState({
@@ -52,7 +52,8 @@ class MyMenu extends Component {
         {
           navigaion.map((item, index) => (
             <li key={index} onClick={() => this.flip(item.name)}>
-              {item.label}{/* <Link to={item.name}>{item.label}</Link> */}
+              {item.label}
+              {/* <Link to={item.name}>{item.label}</Link> */}
             </li>
           ))
         }

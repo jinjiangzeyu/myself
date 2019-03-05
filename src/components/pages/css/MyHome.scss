@@ -1,12 +1,40 @@
-.content{
-    width: 100%;
+.home{
+    width: 60%;
     height: 100%;
     color: white;
     text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    // box-shadow: 0 0 50px rgba(255,255,255,0.4);
+    box-shadow: -2px 0px 5px 5px rgba(255,255,255,0.3),
+                0px -2px 5px 5px rgba(255,255,255,0.3),
+                2px 0px 5px 5px rgba(255,255,255,0.3),
+                0px 2px 5px 5px rgba(255,255,255,0.3);
     .content_name{
-        font-size: 70px;
+        font-weight: 800;
+        font-family: 'Arual';
+        // margin-top: 100px;
+        font-size: 90px;
     }
     .content_motto{
+        margin-top: 20px;
+        font-family: 'Arual';
+        font-size: 40px;
+    }
+    .content_text{
+        margin-top: 20px;
+        font-family: 'lanhu';
         font-size: 30px;
+    }
+    .icon_box{
+        margin-top: 50px; 
+        img{
+            cursor: pointer;
+            margin-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
     }
 }

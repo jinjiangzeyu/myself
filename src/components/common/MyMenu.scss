@@ -1,12 +1,29 @@
+@keyframes myfirst{
+  0%   {background: rgba($color: #000000, $alpha: 0.6);color: white;}
+  50% {background: rgba($color: #ffffff, $alpha: 0.6);color: white;}
+  75% {background: rgba($color: #000000, $alpha: 0.6);color: white;}
+  100% {background: rgba($color: #ffffff, $alpha: 0.6);color: rgb(214, 15, 198);}
+}
 .navigation {
   color: white;
   cursor: pointer;
   overflow: hidden;
   li{
+    font-family: 'xindi';
+    font-weight: 600;
+    background: rgba($color: #000000, $alpha: 0.6);
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
     float: left;
     padding: 10px 20px;
   }
   li:hover{
-    background: red;
+    animation: myfirst 0.5s forwards;
+    // border: 2px solid red;
+    // -webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
+    // -moz-transition: -moz-transform 0.2s, opacity 0.3s;
+    // transition: transform 1s, opacity 0.3s;
   }
 }

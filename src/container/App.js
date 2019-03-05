@@ -27,14 +27,12 @@ class App extends Component {
               <div className={'main-panel flip' + this.state.flipState ? 'out' : 'in' }>
                 <div className="wrapper">
                   <Switch>
-                    <div className='view_box'>
                       <Route exact path="/" component={Home} />
                       <Route path="/about" component={About} />
                       <Route path="/skills" component={Skills} />
                       <Route path="/project" component={Project} />
                       <Route path="/hobby" component={Hobby} />
                       <Route path="/blog" component={Blog} />
-                    </div>
                   </Switch>
                 </div>
               </div>
